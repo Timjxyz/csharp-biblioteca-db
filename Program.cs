@@ -25,7 +25,7 @@ switch (opzione)
         string password = Console.ReadLine();
 
         Utente nuovo = new Utente(nome, cognome, email, password);
-        sistema.registraNuovoUtente(nuovo); //gestire il fatto del null dei cartteri
+        sistema.registraNuovoUtente(nuovo);
         break;
 
     //case 2: //login
@@ -34,7 +34,7 @@ switch (opzione)
         //Console.WriteLine("Inserisci la tua password: ");
         //string passwordLogin = Console.ReadLine();
 
-        //s.effettuaLogin(emailLogin);
+        //sistema.effettuaLogin(emailLogin);
         //break;
 }
 

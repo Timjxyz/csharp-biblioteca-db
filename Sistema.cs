@@ -30,7 +30,7 @@ namespace csharp_biblioteca
                     cmd.Parameters.Add(new SqlParameter("@email", nuovoUtente.email));
                     cmd.Parameters.Add(new SqlParameter("@password", nuovoUtente.password));
 
-                    int rows = cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
                     Console.WriteLine("Registrazione effettuata correttamente");
                 }
                 catch (Exception e)
