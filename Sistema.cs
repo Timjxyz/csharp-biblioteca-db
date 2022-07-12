@@ -22,7 +22,7 @@ namespace csharp_biblioteca
                 {
                     con.Open();
 
-                    string query = "INSERT INTO User (name, surname, email, password) VALUES (@name, @surname, @email, @password)";
+                    string query = "INSERT INTO [User] (name, surname, email, password) VALUES (@name, @surname, @email, @password)";
 
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.Add(new SqlParameter("@name", nuovoUtente.nome));
